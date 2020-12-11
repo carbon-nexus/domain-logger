@@ -1,11 +1,12 @@
 {
   "name": "domain-logger",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.3",
+  "description": "Create a simple logger, with domain context for logging",
   "main": "dist/index.js",
   "scripts": {
+    "build": "npm run transpile",
     "start": "npm run transpile && node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "transpile": "tsc"
   },
   "repository": {
@@ -18,6 +19,9 @@
     "microservice",
     "domain-driven-design"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "Jon McLean (jmclean@carbon-nexus.com)",
   "license": "MIT",
   "bugs": {
@@ -29,7 +33,11 @@
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.12",
     "@types/winston": "^2.4.4",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
     "typescript": "^4.1.2"
   }
 }
