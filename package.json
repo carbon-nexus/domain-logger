@@ -1,0 +1,35 @@
+{
+  "name": "domain-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run transpile && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbon-nexus/domain-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "winston",
+    "microservice",
+    "domain-driven-design"
+  ],
+  "author": "Jon McLean (jmclean@carbon-nexus.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carbon-nexus/domain-logger/issues"
+  },
+  "homepage": "https://github.com/carbon-nexus/domain-logger#readme",
+  "dependencies": {
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/winston": "^2.4.4",
+    "typescript": "^4.1.2"
+  }
+}
