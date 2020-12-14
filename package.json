@@ -1,6 +1,6 @@
 {
   "name": "domain-logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create a simple logger, with domain context for logging",
   "main": "dist/index.js",
   "scripts": {
